@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle para Rosmery</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.min.css">
+    <!-- Librerías externas para nieve y fuegos artificiales -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/loktar00/JQuery-Snowfall/master/src/snowfall.jquery.js"></script>
+</head>
+<body>
+    <div class="background" id="background">
+        <!-- El árbol de Navidad -->
+        <div class="star"></div>
+        <div class="christmas-tree-container">
+            <div class="christmas-tree" id="christmasTree"></div>
+        </div>
+    </div>
+
+    <!-- El popup con el carrusel de imágenes -->
+    <div class="popup-container" id="popupContainer">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="carousel-container">
+                <div class="carousel" id="imageCarousel">
+                    <img src="img1.jpg" alt="Imagen 1">
+                    <img src="img2.jpg" alt="Imagen 2">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
